@@ -58,7 +58,11 @@ console.table(marks);
 console.log("Datatye is " + typeof marks);
 
 // functions
-function findName{
+function findName(){
     
 }
+console.log(typeof findName);
 
+let date=new Date();
+console.log( typeof date);
+console.log( date);
