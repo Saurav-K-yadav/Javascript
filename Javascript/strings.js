@@ -26,3 +26,28 @@ console.log(Name.charAt(0));
 console.log(Name.endsWith("?"));
 console.log(Name.includes("Hero"));
 
+console.log(Name.substring(0, 3));
+// displays Name [0] to Name[2]
+
+console.log(Name.slice(0, 4));
+// Works like substring BUT
+console.log(Name.slice(0, -1));
+// displays till n-1 position where n is last position
+console.log(Name.slice(-1));
+// displays last position
+console.log(Name.split(" "));
+// splits given string in arrays whenever given character is encountered
+
+let str = "hello world hello there";
+console.log(str.replace("hello", "HI"));
+// replaces first occurence
+
+// Template literals
+// let fruit1="Orange";
+// let fruit2="Apple";
+// let myHtml=`Hello${Name}
+//             <h1> This is heading</h1>
+//             <p> You like ${fruit1} or ${fruit2}   `;
+
+// document.body.innerHTML = myHtml;
+// ------Code contains Bug ------
