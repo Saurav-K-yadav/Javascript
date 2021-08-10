@@ -42,12 +42,9 @@ let str = "hello world hello there";
 console.log(str.replace("hello", "HI"));
 // replaces first occurence
 
-// Template literals
-// let fruit1="Orange";
-// let fruit2="Apple";
-// let myHtml=`Hello${Name}
-//             <h1> This is heading</h1>
-//             <p> You like ${fruit1} or ${fruit2}   `;
+// Template Literals
+let firstName = "John";
+let lastName = "Doe";
 
-// document.body.innerHTML = myHtml;
-// ------Code contains Bug ------
+let text = `Welcome ${firstName}, ${lastName}!`;
+console.log(text);
