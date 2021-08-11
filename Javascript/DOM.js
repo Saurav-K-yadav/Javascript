@@ -4,10 +4,10 @@ console.log(a);
 
 a = document.all;
 console.log(a);
+// don't use will be dicontinued
 
 a = document.body;
 console.log(a);
-// don't use will be dicontinued
 a = document.forms[0];
 console.log(a);
 // targets the forms
