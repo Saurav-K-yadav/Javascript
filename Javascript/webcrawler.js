@@ -1,6 +1,10 @@
 let text = document.links;
-Array.from(text).forEach(function (element) {
-  if (element.href.includes("code")) {
-    console.log("code");
+let str = "python";
+let hre;
+Array.from(text).forEach(function(element) {
+  hre = element.href;
+  if (hre.includes(str)) {
+    console.log(hre);
   }
 });
+ 
