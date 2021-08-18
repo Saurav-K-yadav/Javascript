@@ -1,7 +1,7 @@
 console.log("Welcome to notes app");
 showNotes();
 
-//if user adds a note, t is to be added to local storage
+//if user adds a note, it is to be added to local storage
 let addBtn = document.getElementById("addbtn");
 addBtn.addEventListener("click", function (e) {
   let addTxt = document.getElementById("addtxt");
@@ -17,6 +17,7 @@ addBtn.addEventListener("click", function (e) {
   console.log(notesObj);
   showNotes();
 });
+//Function to display elements
 function showNotes() {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
@@ -30,7 +31,7 @@ function showNotes() {
     <div class="card-body">
       <h5 class="card-title">Note ${index + 1}</h5>
       <p class="card-text">${element}</p>
-      <button class="btn btn-primary">Delete Note</button>
+      <button id="${index}"onclick="deleteNote(this.id) class="btn btn-primary">Delete Note</button>
     </div>
   </div>
   `;
@@ -43,3 +44,17 @@ function showNotes() {
     notesElm.innerHTML = 'Nothing here!!<br> Add notes';
   }
 }
+
+//delete notes
+// function deleteNote(index) {
+//   console.log("Deleting note");
+//   // let notes = localStorage.getItem("notes");
+//   // if (notes == null) {
+//   //   notesObj = [];
+//   // } else {
+//   //   notesObj = JSON.parse(notes);
+//   // }
+//   // notesObj.splice(index, 1);
+//   // showNotes();
+//   // localStorage.setItem("notes", JSON.stringify(notesObj));
+// }
