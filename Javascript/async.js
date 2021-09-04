@@ -5,7 +5,7 @@ async function saurav() {
     const response = await fetch('https://api.github.com/users');
     console.log("Before response");
     const users = await response.json();
-    //transfer control back while this request is handled in background
+    //transfer control back while this request is handled in background0
     console.log("users resolved");
     return users;
     // return "Saurav";
